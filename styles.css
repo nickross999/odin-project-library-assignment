@@ -84,3 +84,9 @@ button {
 .invalid {
     box-shadow: 0 0 0 1px red;
 }
+
+.version-number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
