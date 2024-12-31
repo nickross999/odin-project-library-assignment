@@ -57,6 +57,11 @@ function displayLibrary() {
         removeButton.classList.add('remove-btn');
         removeButton.addEventListener('click', () => {
             myLibrary.splice(book.index, 1);
+            myLibrary.forEach(item => {
+                if (item.index > book.index) {
+                    item.index--;
+                }
+            });
             displayLibrary();
         })
 
